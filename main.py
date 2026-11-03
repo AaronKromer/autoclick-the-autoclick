@@ -24,7 +24,7 @@ with sync_playwright() as p:
     page = context.new_page()
     page.goto("https://puntateaste.it/")
     page.wait_for_selector("#seconds_0")
-    page.fill("#seconds_0", "2")
+    page.fill("#seconds_0", "1")
     page.wait_for_selector("#auto0")
     page.click("#auto0")
 
